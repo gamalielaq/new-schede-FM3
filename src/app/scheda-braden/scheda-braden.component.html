@@ -1,0 +1,360 @@
+<section class="panel panel-default">
+	<div class="panel-body">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						Informazioni Generali
+					</div>
+					<div class="panel-body">
+						<div class="form-horizontal">
+							<div class="col-sm-4 col-md-6">
+								<div class="form-group">
+									<label class="col-sm-12">Valutatore</label>
+									<div class="col-sm-12">
+										<input class="form-control" type="text" [(ngModel)]="formData.variabili" ng-change="calcoloStepUno()">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-6">
+								<div class="form-group">
+									<label class="col-sm-12">Figura Professionale del valutatore</label>
+									<div class="col-sm-12">
+										<input class="form-control" type="text"  [(ngModel)]="formData.variabili">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-12">
+								<div class="form-group">
+									<label class="col-sm-12">Commento</label>
+									<div class="col-sm-12">
+										<textarea class="form-control"></textarea>
+									</div>
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						PERCEZIONE SENSORIALE
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<label class="col-sm-12">Abilità a rispondere in modo corretto alla sensazione di disagio correlata alla posizione</label>
+							<div class="col-sm-12">
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Non limitata</span>
+								</label>
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Molto limitata</span>
+								</label>
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Leggermente limitata</span>
+								</label>
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Nessuna limitazione</span>
+								</label>
+							</div>
+
+						</div>
+					</div>
+					<div class="panel-footer" align="justify">
+						<h5 style="margin-left:30px;"><b>Leggenda</b></h5>
+						<ul>
+							<li>
+								<p><b>Non limitata:</b><span>Assenza di risposta (non geme, non si contrae o afferra) agli stimoli dolorosi dovuta alla riduzione dello stato di coscienza o a sedazione, OPPURE, limitata capacità di avvertire glistimoli dolorosi su gran parte della superficie corporea</span></p>
+							</li>
+							<li>
+								<p><b>Molto limitata:</b><span>Risponde solamente agli stimoli dolorosi. Non è in grado di comunicare il suo disagio se nongemendo e agitandosi, OPPURE, ha un danno sensorila che limita la capacità di percepire il dolore e il disagio sul 50% della superficie corporea</span></p>		
+							</li>
+							<li>
+								<p><b>Leggermente limitata:</b><span>Risponde ai comandi verbali, ma non riesce a comunicare sempre il suo disagio oppure necessita di essere routato, OPPURE, ha qualche limitazione sensoriale che limita la sua capacità di percepire il dolore o il disagio in una o due estremità</span></p>	
+							</li>
+							<li>
+								<p><b>Nessuna limitazione:</b><span>Risponde ai comandi verbale. Non ha deficit sensoriali che limitano la capacità di percepire il dolore o il disagio</span></p>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						UMIDITA'	
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<label class="col-sm-12">Grado di esposizione della pelle all'umidità</label>
+							<div class="col-sm-12">
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Costantemente Umida</span>
+								</label>
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Molto umida</span>
+								</label>
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Occasionalmente umida</span>
+								</label>
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Raramente umida</span>
+								</label>
+							</div>
+
+						</div>
+					</div>
+					<div class="panel-footer" align="justify">
+						<h5 style="margin-left:30px;"><b>Leggenda</b></h5>
+						<ul>
+							<li>
+								<p><b>Costantemente Umida:</b><span>La cute è costantemente umida a causa della sudorazione, delle urine, etc. L'umidità viene riscontrata ogni volta che il soggetto viene mosso o ruotato</span></p>
+							</li>
+							<li>
+								<p><b>Molto Umida:</b><span>	La cute è spesso, ma non sempre umida. Il pannolone o la biancheria viene cambiata almeno una volta per turno</span></p>		
+							</li>
+							<li>
+								<p><b>Occasionalmente umida:</b><span>La cute è occasionalmente umida, è richiesto un cambio della biancheria circa una volta al giorno</span></p>	
+							</li>
+							<li>
+								<p><b>Raramente umida:</b><span>La cute è normalemente asciutta, la biancheria viene cambiata secondo gli intervalli abituali in uso.</span></p>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						ATTIVITA'
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<label class="col-sm-12">Grado di attività Fisica</label>
+							<div class="col-sm-12">
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Allettato</span>
+								</label>
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>In poltrona</span>
+								</label>
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Cammina Occasionalmente</span>
+								</label>
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Cammina di Frequente</span>
+								</label>
+							</div>
+
+						</div>
+					</div>
+					<div class="panel-footer" align="justify">
+						<h5 style="margin-left:30px;"><b>Leggenda</b></h5>
+						<ul>
+							<li>
+								<p><b>Allettato:</b><span>	Confinato a letto</span></p>
+							</li>
+							<li>
+								<p><b>In poltrona:</b><span>Capacità di camminare molto limitata o assente. Non riesce a spostare il suo peso e/o deve essere assistito in poltrona o sulla carrozzella</span></p>		
+							</li>
+							<li>
+								<p><b>Cammina Occasionalmente:</b><span>Cammina occasionalmente durante la giornata, ma per distanze molto brevi, con o senza aiuto. Passa la maggior parte del tempo a letto o in poltrona</span></p>	
+							</li>
+							<li>
+								<p><b>Cammina di Frequente:</b><span>Cammina al di fuori della sua stanza almento due volte al giorno e nella stanza almeno ogni due ore durante le ore diurne</span></p>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						MOBILITA'
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<label class="col-sm-12">Capacità di cambiare e di controllare le posizioni del corpo</label>
+							<div class="col-sm-12">
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Completamente Immobile</span>
+								</label>
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Molto limitata</span>
+								</label>
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Parzialmente limitata</span>
+								</label>
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Limitazioni assenti</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="panel-footer" align="justify">
+						<h5 style="margin-left:30px;"><b>Leggenda</b></h5>
+						<ul>
+							<li>
+								<p><b>Completamente Immobile::</b><span>Non riesce a produrre neppure piccoli movimenti del corpo e delle estremità senza assistenza</span></p>
+							</li>
+							<li>
+								<p><b>Molto limitata:</b><span>	Riesce occasionalmente a fare piccoli moviemnti corporei o delle estremità, ma non riesce a realizzare frequenti o significativi movimenti in modo indipendente</span></p>		
+							</li>
+							<li>
+								<p><b>Parzialmente limitata:</b><span>Cambia frequentemente la posizione con minimi spostamenti del corpo</span></p>		
+							</li>
+							<li>
+								<p><b>Limitazioni assenti:</b><span>Si sposta frequentemente e senza assistenza</span></p>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						NUTRIZIONE'
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<label class="col-sm-12">Assunziona usuale di Cibo</label>
+							<div class="col-sm-12">
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Molto Povera</span>
+								</label>
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Probabilmente Inadeguata</span>
+								</label>
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Adeguata</span>
+								</label>
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Eccellente</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="panel-footer" align="justify">
+						<h5 style="margin-left:30px;"><b>Leggenda</b></h5>
+						<ul>
+							<li>
+								<p><b>Molto Povera</b><span>Non mangia mai un pasto completo. Raramente mangia pià di 1/3 di qualsiasi cibo offerto. Duo o meno porzioni di proteine al giorno. Assume pochi liquidi e nessun integratore, OPPURE, E' a digiuno o sostenuto solamente con fleboclisi o a dieta esclusivamente idrica per più di 5 giorni</span></p>
+							</li>
+							<li>
+								<p><b>Probabilmente Inadeguata:</b><span>Raramente mangia un pasto completo, generalmente mangia la metà dei cibi offerti. Le proteine assunte includono 3 porzioni di carne o latticini al giorno, occasionalmente integratori alimentari, OPPURE, Riceve una quantità scarsa rispetto a quanto prevista come dieta liquida enterale ( via SNG o PEG )</span></p>		
+							</li>
+							<li>
+								<p><b>Adeguata:</b><span>Mangia più della metà dei pasti. 4 o più porzioni di proteine al giorno. Assume normalmente integratori, OPPURE, si alimenta artificialmente (via SNG/ PEG), assumendo il quantitativo nutrizionale necessario</span></p>		
+							</li>
+							<li>
+								<p><b>Eccellente:</b><span>Mangia la maggio parte del cibo. Non rifiura mai un pasto. talvolta mangia tra i pasti, Non ha necessità di integratori</span></p>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						ATTRITO E FRIZIONE
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<label class="col-sm-12">Attrito e Frizione</label>
+							<div class="col-sm-12">
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Problema</span>
+								</label>
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Problema Potenziale</span>
+								</label>
+								<label class="ui-checkbox">
+									<input name="" type="checkbox" ng-true-value="1" ng-model="formData.schedaMust.stepTree.optionUno" ng-click="CalcoloStepTre()">
+									<span>Senza problemi apparenti</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="panel-footer" align="justify">
+						<h5 style="margin-left:30px;"><b>Leggenda</b></h5>
+						<ul>
+							<li>
+								<p><b>Problema:</b><span>Richiede da moderata a completa assistenza nei movimenti. Scivola di frequente nel letto o nella poltrona. Spesso richiede riposizionamentocon assistenza. Sono presenti spasticità, contratture, agitazione, che causanocostante attrito control il piano del letto o della poltrona</span></p>
+							</li>
+							<li>
+								<p><b>Problema Potenziale:</b><span>Si muove poco e necessita di una minima assistenza. Durante lo spostamentom la cute fa attrito con le lenzuola o con il piano della poltrona, occasionalmente può slittare</span></p>		
+							</li>
+							<li>
+								<p><b>Senza problemi apparenti:</b><span>	Si sposta nel letto e sulla sedia in modo autonomo ed ha sufficiente forza muscolare per sollevarsi completamente durante i movimenti</span></p>		
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						TOTALE
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<label class="col-md-2">Punteggio Totale</label>
+							<div class="col-md-10">
+								<input class="form-control" type="" name="">
+							</div>
+						</div>
+					</div>
+					<div class="panel-footer">
+						<p>Punteggio > 16 - Paziente non a rischio</p>
+						<P>Punteggio da 13 a 16 - Paziente a rischio</P>
+						<P>Punteggio < 13 - Paziente ad alto rischio</P>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<input>
+
+
+</section>
+<script type="text/javascript">
+	console.log(formData);
+	alert("hi!!!")
+</script>

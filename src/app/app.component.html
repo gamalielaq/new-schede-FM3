@@ -1,0 +1,264 @@
+
+<!-- <link rel="stylesheet" type="text/css" href="http://devsrv03.erossi.org:8080/HIS/fm3/styles/main-orange-b98308a370.css"> -->
+
+<!-- <link rel="stylesheet" type="text/css" href="/styleCss.css"> -->
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script> -->
+<!-- <link rel="stylesheet" type="text/css" href="http://srvintegrazione.soldom.local:8780/HIS/styles/main-orange-03a52b6f87.css"> -->
+
+
+<div class="col-md-12">
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-brand">
+				<a class="navbar-left" href="#">New Scheda FM3</a>
+			</div>
+
+			<ul class="nav navbar-nav">
+				<li><a  href="#Braden" data-toggle="modal" data-target=".braden">Braden</a></li>
+				<li><a  href="#Alimentazione" data-toggle="modal" data-target=".alimentazione">Alimentazione</a></li>
+				<li><a  href="#MentalShort" data-toggle="modal" data-target=".mentalShort">Mini Mental Short</a></li>
+				<li><a  href="#Tinetti" data-toggle="modal" data-target=".Tinetti">Tinetti Balance</a></li>
+				<li><a  href="#IdoneitaAusilio" data-toggle="modal" data-target=".idoneita">Idoneita Ausilio</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+<div class="col-md-12">
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+				<h4 class="panel-title">
+					<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						Scheda Alimentazione
+					</a>
+				</h4>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+				<div class="panel-body">
+					<app-scheda-alimentazione></app-scheda-alimentazione>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingTwo">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#IdoneitaAusilio" aria-expanded="false" aria-controls="IdoneitaAusilio">
+						Scheda Idoneit aAusilio
+					</a>
+				</h4>
+			</div>
+			<div id="IdoneitaAusilio" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				<div class="panel-body">
+					<app-scheda-idoneita-ausilio></app-scheda-idoneita-ausilio>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingTwo">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						Scheda Braden
+					</a>
+				</h4>
+			</div>
+			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				<div class="panel-body">
+					<app-scheda-braden></app-scheda-braden>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						Scheda mini mental short
+					</a>
+				</h4>
+			</div>
+			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				<div class="panel-body">
+					<app-scheda-mini-mental-short></app-scheda-mini-mental-short>
+					
+				</div>
+			</div>
+		</div>
+
+		
+
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="assesment">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#nutritionalassesment" aria-expanded="false" aria-controls="nutritionalassesment">
+						Scheda Mini nutritional assesment
+					</a>
+				</h4>
+			</div>
+			<div id="nutritionalassesment" class="panel-collapse collapse" role="tabpanel" aria-labelledby="assesment">
+				<div class="panel-body">
+					<app-scheda-mini-nutritional-assesment></app-scheda-mini-nutritional-assesment>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="examination">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#stateexamination" aria-expanded="false" aria-controls="stateexamination">
+						Scheda Mini Mental state examination
+					</a>
+				</h4>
+			</div>
+			<div id="stateexamination" class="panel-collapse collapse" role="tabpanel" aria-labelledby="examination">
+				<div class="panel-body">
+					<app-scheda-mini-mental-state-examination></app-scheda-mini-mental-state-examination>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="vsanitaria">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#valutazionesanitaria" aria-expanded="false" aria-controls="valutazionesanitaria">
+						Scheda Valutazione Sanitaria
+					</a>
+				</h4>
+			</div>
+			<div id="valutazionesanitaria" class="panel-collapse collapse" role="tabpanel" aria-labelledby="vsanitaria">
+				<div class="panel-body">
+					<app-scheda-valutazione-sanitaria></app-scheda-valutazione-sanitaria>
+				</div>
+			</div>
+		</div> -->
+
+		
+
+
+	</div>
+</div>
+<br>
+
+<!-------------------------------------------------- MODAL --------------------------------------------------------------------------------------------->
+<div class="modal fade braden">
+	<div class="modal-body">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Scheda braden</h4>
+			</div>
+			<div>
+				<app-scheda-braden></app-scheda-braden>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Chiude</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div class="modal fade alimentazione">
+	<div class="modal-body">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Scheda Alimentazione</h4>
+			</div>
+			<div>
+				<app-scheda-alimentazione></app-scheda-alimentazione>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Chiude</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade mentalShort">
+	<div class="modal-body">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Scheda Mini Mental Short</h4>
+			</div>
+			<div>
+				<app-scheda-mini-mental-short></app-scheda-mini-mental-short>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Chiude</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade Tinetti">
+	<div class="modal-body">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Scheda Tinetti</h4>
+			</div>
+			<div>
+				<app-scheda-tinetti-balance></app-scheda-tinetti-balance>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Chiude</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade idoneita">
+	<div class="modal-body">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Scheda Idoneita Ausilio</h4>
+			</div>
+			<div>
+				<app-scheda-idoneita-ausilio></app-scheda-idoneita-ausilio>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Chiude</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

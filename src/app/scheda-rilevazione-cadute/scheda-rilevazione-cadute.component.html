@@ -1,0 +1,1078 @@
+<style>
+.list-group-item-n{
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	margin-bottom: -1px;
+	background-color: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.list-group-item-l{
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	margin-bottom: -1px;
+	background-color: #fff;
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+</style>
+<section class="panel panel-default">
+	<div class="panel-body">
+		<div class="row">
+			<div class="form-horizontal">
+				<div class="col-sm-4 col-md-12">
+					<div class="form-group">
+						<label class="col-sm-12">Quando è avvenuta la caduta? (Indicare anche HH.mm)</label>
+						<div class="col-sm-12">
+							<div class="form-inline">
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Mattino</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Pomeriggio</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Sera</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Notte</span></label>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-12">
+					<div class="form-group">
+						<label class="col-sm-12">Luogo della caduta</label>
+						<div class="col-sm-12">
+							<div class="form-inline">
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Letto</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Camera da letto</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Poltrona</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Bagno</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Spazi di attività comune</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Spazi non di pertinenza della struttura</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Corridoio degenza</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Altro</span></label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-12">
+					<div class="form-group">
+						<label class="col-sm-12">Comunicazione ai C.C.</label>
+						<div class="col-sm-12">
+							<div class="form-inline">
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						Tipo di caduta	
+					</div>
+					<div class="panel-body">
+						<div class="form-horizontal">
+							<div class="col-sm-4 col-md-6">
+								<div class="form-group">
+									<label class="col-sm-12">Accasciamento</label>
+									<div class="col-sm-12">
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-6">
+								<div class="form-group">
+									<label class="col-sm-12">Azzardo</label>
+									<div class="col-sm-12">
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-12">
+								<div class="form-group">
+									<label class="col-sm-12">Drop attack (perdita improvvisa di tono muscolare delle gambe senza perdita di coscienza con caduta in ginocchio o seduto e impossibilita a rialzarsi in piedi)</label>
+									<div class="col-sm-12">
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-6">
+								<div class="form-group">
+									<label class="col-sm-12">Inciampi o scivolon</label>
+									<div class="col-sm-12">
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-6">
+								<div class="form-group">
+									<label class="col-sm-12">Sbandamento vertiginoso</label>
+									<div class="col-sm-12">
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-12">
+								<div class="form-group">
+									<label class="col-sm-12">Altro</label>
+									<div class="col-sm-12">
+										<textarea class="form-control"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						MOTIVO DELLA CADUTA	
+					</div>
+					<div class="panel-body">
+						<div class="form-horizontal">
+							<div class="col-sm-4 col-md-6">
+								<div class="form-group">
+									<label class="col-sm-12">Vero incidente</label>
+									<div class="col-sm-12">
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-6">
+								<div class="form-group">
+									<label class="col-sm-12">Cause patologiche</label>
+									<div class="col-sm-12">
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-12">
+								<div class="form-group">
+									<label class="col-sm-12">Cause idiopatiche</label>
+									<div class="col-sm-12">
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-12">
+								<div class="form-group">
+									<label class="col-sm-12">Interazione fra fattori ambientali e aumentata suscettibilità</label>
+									<div class="col-sm-12">
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-12">
+								<div class="form-group">
+									<label class="col-sm-12">Assunzione di farmaci (psicotropi)	</label>
+									<div class="col-sm-12">
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-12">
+								<div class="form-group">
+									<label class="col-sm-12">Altro</label>
+									<div class="col-sm-12">
+										<textarea class="form-control"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						CONSAPEVOLEZA DELLA CADUTA
+					</div>
+					<div class="panel-body">
+						<div class="form-horizontal">
+							<div class="col-sm-4 col-md-6">
+								<div class="form-group">
+									<label class="col-sm-12">Durante la caduta</label>
+									<div class="col-sm-12">
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-6">
+								<div class="form-group">
+									<label class="col-sm-12">Dopo la caduta</label>
+									<div class="col-sm-12">
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-12">
+								<div class="form-group">
+									<label class="col-sm-12">Eventuali segni e/o sintomi durante la caduta (specificare quali)</label>
+									<div class="col-sm-12">
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-12">
+								<div class="form-group">
+									<label class="col-sm-12">Altro</label>
+									<div class="col-sm-12">
+										<textarea class="form-control"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-7">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						OSTACOLI AMBIENTALI	
+					</div>
+					<div class="panel-body">
+						<div class="col-md-6">
+							<div class="list-group">
+								<div class="list-group-item">
+									<label class="">Scale sconnesse</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Pavimento scivoloso</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Pavimenti a superficie sconnessa</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Tappeti non fissati correttamente</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Tappeto scivoloso nella vasca/doccia</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Luminosità inadeguata</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Luci notturne insufficienti</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Interruttori delle luci poco accessibili</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="list-group">
+								<div class="list-group-item">
+									<label class="">Altezza di sedie/poltrone non corretta</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Altezza della sedia della toilette noncorretta</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Altezza del letto non corretta</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Sponde di protezione del lettoinadeguate</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Corrimano inadeguato lungo le scale (ocorridoi) da entrambi i lati</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Barre pensili inadeguate per toilette e vasca</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Ausili per il movimento inadeguati</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Altro</label>
+									<div class="">
+										<textarea class="form-control"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-5">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								ESTITI DELLA CADUTA RECENTE	
+							</div>
+							<div class="list-group">
+								<div class="list-group-item">
+									<label class="">Lesione dolorosa dei tessuti molli</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Lesione lacero contuosa (necessità di punti sutura)</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Frattura</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Ematoma subdurale</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Disabilità da diminuzione della mobilità secondaria alle lesioni</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Disabilità da diminuzione della mobilità secondaria a paura, insicurezza</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Ospedalizzazione</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Morte</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Altro</label>
+									<div class="">
+										<textarea class="form-control"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-4">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								COMUNICAZIONI	
+							</div>
+							<div class="list-group">
+								<div class="list-group-item">
+									<label class="">Comunicazione ai famigliari</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								MODALITA DI CADUTA	
+							</div>
+							<div class="list-group">
+								<div class="list-group-item">
+									<label class="">Cade da</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Letto</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Sedia poltrona</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Sedia rotelle/carrozzina</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Stazione eretta</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Informazione non not</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Cade mentre</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>A riposo</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Cambio postura</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Deambula</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Informazione non nota</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Trasferimento letto/carrozzzina/sedia</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Cade in corso di</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Movimento autonomo (con o senza ausili)</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Informazione non nota</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Movimento assistito</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Altro</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Cade a causa di</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Inciampo</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Scivolamento/urto con oggetto</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Evento patologico</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Informazione non nota</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Manovra del personale incongrua</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Altro</span></label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-8">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						VALUTAZIONE DEI POSSIBILI MOTIVI PSICOLOGICI DETERMINANTI LA CADUTA
+					</div>
+					<div class="panel-body">
+						<div class="col-sm-6">
+							<div class="list-group">
+								<div class="list-group-item">
+									<label class="">Caduta volontaria ? (richiesta di attenzione - suicidio)	</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Caduta da sovrastima delle proprie capacità fisiche</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="list-group">
+								<div class="list-group-item">
+									<label class="">Caduta in un momento di confusione o stress</label>
+									<div class="form-inline">
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+										<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+									</div>
+								</div>
+								<div class="list-group-item">
+									<label class="">Altro</label>
+									<textarea class="form-control"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-8">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						MODALITA DI CADUTA	
+					</div>
+					<div class="list-group">
+						<div class="list-group-item">
+							<label class="">Cade da</label>
+							<div class="form-inline">
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Letto</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Sedia poltrona</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Sedia rotelle/carrozzina</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Stazione eretta</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Informazione non not</span></label>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<label class="">Cade mentre</label>
+							<div class="form-inline">
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>A riposo</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Cambio postura</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Deambula</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Informazione non nota</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Trasferimento letto/carrozzzina/sedia</span></label>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<label class="">Cade in corso di</label>
+							<div class="form-inline">
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Movimento autonomo (con o senza ausili)</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Informazione non nota</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Movimento assistito</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Altro</span></label>
+							</div>
+						</div>
+						<div class="list-group-item">
+							<label class="">Cade a causa di</label>
+							<div class="form-inline">
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Inciampo</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Scivolamento/urto con oggetto</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Evento patologico</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Informazione non nota</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Manovra del personale incongrua</span></label>
+								<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Altro</span></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						FATTORI CHE POSSONO AVER CONTRIBUITO ALL'EVENTO
+					</div>
+					<div class="panel-body">
+						<div class="col-md-4">
+							<label class="">Fattori legati all'ambiente</label>
+							<div class="panel panel-primary">
+								<div class="list-group">
+									<div class="list-group-item">
+										<label>Grossa fragilità o infermità	</label>
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+									<div class="list-group-item">
+										<label>Non cosciente/scarsamente orientato</label>
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+									<div class="list-group-item">
+										<label>Poca/mancata autonomia</label>
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+									<div class="list-group-item">
+										<label>Barriere linguistiche/architettoniche</label>
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+									<div class="list-group-item">
+										<label>Mancata adesione al progetto personalizzato</label>
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+									<div class="list-group-item">
+										<label>Altro</label>
+										<textarea class="form-control"></textarea>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-md-8">
+							<label class="">Fattori legati al personale</label>
+							<div class="panel panel-primary">
+								<div class="panel-body">
+									<div class="col-md-6">
+										<div class="row">
+											<div class="list-group">
+												<div class="list-group-item-n">
+													<label>Difficoltà nel seguire istruzioni/procedure</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item-n">
+													<label>Fatica/stress</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item-n">
+													<label>Presa scorciatoia/regola non seguita</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item-n">
+													<label>Mancata/inesatta lettura documenti/etichetta</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item-n">
+													<label>Mancata supervisione</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item-n">
+													<label>Mancato coordinamento</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="row">
+											<div class="list-group">
+												<div class="list-group-item-n">
+													<label>Scarso lavoro di gruppo</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item-n">
+													<label>Mancato/scarso riconoscimento dei bisogni dell'Ospite</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item-n">
+													<label>Scarsa adesione/conoscenza del progetto personalizzato</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item-n">
+													<label>Altro (da specificare)</label>
+													<textarea class="form-control"></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-9">
+							<label class="">Fattori legati al sistema</label>
+							<div class="panel panel-primary">
+								<div class="panel-body">
+									<div class="col-lg-4">
+										<div class="row">
+											<div class="list-group">
+												<div class="list-group-item">
+													<label>Staff inadeguato/insufficiente</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item">
+													<label>Insufficiente addestramento/inserimento</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item">
+													<label>Gruppo nuovo/inesperto</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item">
+													<label>Elevato turn-over</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item">
+													<label>Scarsa continuità assistenziale</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="row">
+											<div class="list-group">
+												<div class="list-group-item">
+													<label>Protocollo/procedura inesistente/ambigua</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item">
+													<label>Mancanza/inadeguatezza attrezzature</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item">
+													<label>Mancata/inadeguatezza manutenzione attrezzature</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item">
+													<label>Mancata/inadeguatezza materiali di consumo</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item">
+													<label>Carenze nel passaggio di informazioni</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="row">
+											<div class="list-group">
+												<div class="list-group-item">
+													<label>Carenze nell'elaborazione dei progetti personalizzati</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item">
+													<label>Problemi legati alla cultura della sicurezza</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item">
+													<label>Problemi di pianificazione</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item">
+													<label>Mancata adesione al progetto personalizzato</label>
+													<div class="form-inline">
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+														<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+													</div>
+												</div>
+												<div class="list-group-item">
+													<label>Altro (da specificare)</label>
+													<textarea class="form-control"></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<label class="">Fattori legati al nucleo familiare</label>
+							<div class="panel panel-primary">
+								<div class="list-group">
+									<div class="list-group-item">
+										<label>Scarsa attenzione ai bisogni sanitari</label>
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+									<div class="list-group-item">
+										<label>Scarsa attenzione ai bisogni primari</label>
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+									<div class="list-group-item">
+										<label>Relazione inadeguata</label>
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+									<div class="list-group-item">
+										<label>Carenza nel passaggio di informazioni</label>
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+									<div class="list-group-item">
+										<label>Altro (da specificare)</label>
+										<textarea class="form-control"></textarea>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						PROVVEDIMENTI ASSUNTI	
+					</div>
+					<div class="panel-body">
+						<div class="form-horizontal">
+							<div class="col-sm-4 col-md-2">
+								<div class="row">
+									<label class="col-sm-12">Medicazione fasciatura</label>
+									<div class="col-sm-12">
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-10">
+								<div class="row">
+									<label class="col-sm-12">sutura</label>
+									<div class="col-sm-12">
+										<div class="form-inline">
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+											<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4 col-md-6">
+									<div class="row">
+										<label class="col-sm-12">Provvedimenti assistenziali (specificare)</label>
+										<div class="col-sm-12">
+											<textarea class="form-control"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4 col-md-2">
+									<div class="row">
+										<label class="col-sm-12">Contenzione temporanea</label>
+										<div class="col-sm-12">
+											<div class="form-inline">
+												<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+												<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4 col-md-2">
+									<div class="row">
+										<label class="col-sm-12">Invio in PS</label>
+										<div class="col-sm-12">
+											<div class="form-inline">
+												<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+												<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4 col-md-2">
+									<div class="row">
+										<label class="col-sm-12">Visita specialistica</label>
+										<div class="col-sm-12">
+											<div class="form-inline">
+												<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+												<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4 col-md-6">
+									<div class="row">
+										<label class="col-sm-12">Indagini strumentali (specificare)</label>
+										<div class="col-sm-12">
+											<textarea class="form-control"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4 col-md-2">
+									<div class="row">
+										<label class="col-sm-12">Osservazione</label>
+										<div class="col-sm-12">
+											<div class="form-inline">
+												<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+												<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4 col-md-2">
+									<div class="row">
+										<label class="col-sm-12">Controlli ematici</label>
+										<div class="col-sm-12">
+											<div class="form-inline">
+												<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+												<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4 col-md-2">
+									<div class="row">
+										<label class="col-sm-12">Visita medica</label>
+										<div class="col-sm-12">
+											<div class="form-inline">
+												<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>Si</span></label>
+												<label class="ui-checkbox"><input type="checkbox" name="" ng-model=""><span>No</span></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

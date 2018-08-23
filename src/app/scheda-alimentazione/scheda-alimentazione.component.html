@@ -1,0 +1,261 @@
+<section>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h5>Informazione Generale</h5>
+    </div>
+    <div class="panel-body">
+
+      <div id="DIABETICO" class="row">
+        <div class="col-xs-3 col-sm-2 col-lg-1">
+          <label>DIABETICO</label>
+        </div>
+        <div class="col-xs-9 col-sm-10 col-lg-11">
+          <label class="ui-radio"><input name="checkbox1" type="radio" value="SI" ng-model="formData.alimentazione.diabetico" ><span>SI</span></label>
+          <label class="ui-radio"><input name="checkbox1" type="radio" value="NO" ng-model="formData.alimentazione.diabetico"><span>NO</span></label>
+        </div>
+      </div>
+      
+      <div id="DISFAGICO" class="row">
+        <div class="col-xs-3 col-sm-2 col-lg-1"><label>DISFAGICO</label></div>
+        <div class="col-xs-9 col-sm-10 col-lg-11">
+          <div class="row">
+            <div class="col-xs-12">
+              <label class="ui-radio"><input type="radio" value="SI" ng-model="formData.alimentazione.disfagico.attivo"><span>SI</span></label>
+              <label class="ui-radio"><input type="radio" value="NO" ng-model="formData.alimentazione.disfagico.attivo"><span>NO</span></label>
+            </div>
+          </div>
+          <div class="row" ng-hide="formData.alimentazione.disfagico.attivo != 'SI'">
+            <div class="col-xs-12">
+              <label class="ui-checkbox"><input type="checkbox" ng-model="formData.alimentazione.disfagico.liquidi"><span>DISFAGICO AI LIQUIDI</span></label>
+              <label class="ui-checkbox"><input type="checkbox" ng-model="formData.alimentazione.disfagico.solidi"><span>DISFAGICO AI SOLIDI</span></label>
+            </div>
+          </div>
+        </div>
+      </div><!-- END DISFAGICO -->
+      
+      <div id="INTEGRATORE" class="row">
+        <div class="col-xs-3 col-sm-2 col-lg-1">
+          <h5>INTEGRATORE</h5>
+        </div>
+        <div class="col-xs-9 col-sm-4 col-lg-3">
+          <span class="ui-select">
+            <select ng-model="formData.alimentazione.integratore">
+              <option>INTEGRATORE FARM</option>
+              <option>BUDWIG MATT</option>
+              <option>BUDWIG POM</option>
+            </select>
+          </span>
+        </div>
+      </div>
+      
+      <div id="chivi" class="row">
+
+        <div id="COLAZIONE" class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h5>COLAZIONE</h5>
+            </div>
+            <div class="panel-body">
+
+              <div id="BEBE" class="row">
+                <div class="col-xs-5">
+                  <h5>BEBE</h5>
+                </div>
+                <div class="col-xs-7">
+                  <span class="ui-select">
+                    <select ng-model="formData.alimentazione.colazione.bebe">
+                      <option>CAFFE'</option>
+                      <option>CAFFE'LATTE</option>
+                      <option>TE</option>
+                      <option>LATTE</option>
+                      <option>YOGURT</option>
+                    </select>
+                  </span>
+                </div>
+              </div> <!-- end BEBE -->
+              <div id="MANGIA" class="row">
+                <div class="col-xs-5">
+                  <h5>MANGIA</h5>
+                </div>
+                <div class="col-xs-7">
+                  <span class="ui-select">
+                    <select ng-model="formData.alimentazione.colazione.mangia">
+                      <option>BISCOTTI</option>
+                      <option>FETTE</option>
+                      <option>PANE</option>
+                      <option>COMPOSTA</option>
+                      <option>MIELE</option>
+                    </select>
+                  </span>
+                </div>
+              </div> <!-- end MANGIA -->
+            </div>
+          </div>
+        </div> <!-- end COLAZIONE -->
+        
+        
+        <div id="PRANZO" class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h5>PRANZO</h5>
+            </div>
+            <div class="panel-body">
+
+              <div id="PANE_PRANZO" class="row">
+                <div class="col-xs-5">
+                  <h5>PANE</h5>
+                </div>
+                <div class="col-xs-7">
+                  <span class="ui-select">
+                    <select ng-model="formData.alimentazione.pranzo.pane">
+                      <option>BIANCO</option>
+                      <option>INTEGRALE</option>
+                    </select>
+                  </span>
+                </div>
+              </div> <!-- end PANE_PRANZO -->
+              
+              <div id="VERDURA_CRUDA_PRANZO" class="row">
+                <div class="col-xs-5"><label>VERDURA CRUDA</label></div>
+                <div class="col-xs-7">
+                  <label class="ui-radio"><input type="radio" value="SI" ng-model="formData.alimentazione.pranzo.verduraCruda"><span>SI</span></label>
+                  <label class="ui-radio"><input type="radio" value="NO" ng-model="formData.alimentazione.pranzo.verduraCruda"><span>NO</span></label>
+                </div>
+              </div><!--END VERDURA_CRUDA_PRANZO-->
+              
+              <div id="VINO_PRANZO" class="row">
+                <div class="col-xs-5"><label>VINO</label></div>
+                <div class="col-xs-7">
+                  <label class="ui-radio"><input type="radio" value="SI" ng-model="formData.alimentazione.pranzo.vino"><span>SI</span></label>
+                  <label class="ui-radio"><input type="radio" value="NO" ng-model="formData.alimentazione.pranzo.vino"><span>NO</span></label>
+                </div>
+              </div><!--END VINO_PRANZO-->
+              
+              <div id="CAFFE_PRANZO" class="row">
+                <div class="col-xs-5"><label>CAFFE</label></div>
+                <div class="col-xs-7">
+                  <label class="ui-radio"><input type="radio" value="SI" ng-model="formData.alimentazione.pranzo.caffe"><span>SI</span></label>
+                  <label class="ui-radio"><input type="radio" value="NO" ng-model="formData.alimentazione.pranzo.caffe"><span>NO</span></label>
+                </div>
+              </div><!--END CAFFE_PRANZO-->
+              
+              <div id="FRUTTA_PRANZO" class="row">
+                <div class="col-xs-5">
+                  <h5>FRUTTA</h5>
+                </div>
+                <div class="col-xs-7">
+                  <span class="ui-select">
+                    <select ng-model="formData.alimentazione.pranzo.frutta">
+                      <option>FRULLATA</option>
+                      <option>A PEZZI</option>
+                      <option>INTERA</option>
+                      <option>BANANA</option>
+                    </select>
+                  </span>
+                </div>
+              </div> <!-- end FRUTTA_PRANZO -->
+            </div>
+          </div>
+        </div> <!-- end PRANZO -->
+        
+        
+        <div id="MERENDA" class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h5>MERENDA</h5>
+            </div>
+            <div class="panel-body">
+
+              <div id="PRENDE" class="row">
+                <div class="col-xs-5">
+                  <h5>PRENDE</h5>
+                </div>
+                <div class="col-xs-7">
+                  <span class="ui-select">
+                    <select ng-model="formData.alimentazione.merenda.prende">
+                      <option>YOGURT</option>
+                      <option>BUDINO</option>
+                      <option>FRUTTA</option>
+                      <option>SOLO IDRATAZIONE</option>
+                      <option>CAFFE'</option>
+                    </select>
+                  </span>
+                </div>
+              </div> <!-- end PRENDE-->
+            </div>
+          </div>
+        </div> <!-- end MERENDA -->
+        
+        
+        
+        
+        <div id="CENA" class="col-xs-12 col-sm-6 col-lg-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h5>CENA</h5>
+            </div>
+            <div class="panel-body">
+
+              <div id="PANE_CENA" class="row">
+                <div class="col-xs-5">
+                  <h5>PANE</h5>
+                </div>
+                <div class="col-xs-7">
+                  <span class="ui-select">
+                    <select ng-model="formData.alimentazione.cena.pane">
+                      <option>BIANCO</option>
+                      <option>INTEGRALE</option>
+                    </select>
+                  </span>
+                </div>
+              </div> <!-- end PANE_CENA -->
+              
+              <div id="VERDURA_CRUDA_CENA" class="row">
+                <div class="col-xs-5"><label>VERDURA CRUDA</label></div>
+                <div class="col-xs-7">
+                  <label class="ui-radio"><input type="radio" value="SI" ng-model="formData.alimentazione.cena.verduraCruda"><span>SI</span></label>
+                  <label class="ui-radio"><input type="radio" value="NO" ng-model="formData.alimentazione.cena.verduraCruda"><span>NO</span></label>
+                </div>
+              </div><!--END VERDURA_CRUDA_CENA-->
+              
+              <div id="VINO_CENA" class="row">
+                <div class="col-xs-5"><label>VINO</label></div>
+                <div class="col-xs-7">
+                  <label class="ui-radio"><input type="radio" value="SI" ng-model="formData.alimentazione.cena.vino"><span>SI</span></label>
+                  <label class="ui-radio"><input type="radio" value="NO" ng-model="formData.alimentazione.cena.vino"><span>NO</span></label>
+                </div>
+              </div><!--END VINO_CENA-->
+              
+              <div id="INFUSO_CENA" class="row">
+                <div class="col-xs-5"><label>INFUSO</label></div>
+                <div class="col-xs-7">
+                  <label class="ui-radio"><input type="radio" value="SI" ng-model="formData.alimentazione.cena.infuso"><span>SI</span></label>
+                  <label class="ui-radio"><input type="radio" value="NO" ng-model="formData.alimentazione.cena.infuso"><span>NO</span></label>
+                </div>
+              </div><!--END INFUSO_CENA-->
+              
+              <div id="FRUTTA_CENA" class="row">
+                <div class="col-xs-5">
+                  <h5>FRUTTA</h5>
+                </div>
+                <div class="col-xs-7">
+                  <span class="ui-select">
+                    <select ng-model="formData.alimentazione.cena.frutta">
+                      <option>FRULLATA</option>
+                      <option>A PEZZI</option>
+                      <option>INTERA</option>
+                      <option>MELA COTTA</option>
+                    </select>
+                  </span>
+                </div>
+              </div> <!-- end FRUTTA_CENA -->
+            </div>
+          </div>
+        </div> <!-- end CENA -->
+        
+        
+      </div> <!-- end Chivi -->
+      
+    </div><!-- END PANEL BODY -->
+  </div><!-- END PANEL -->
+</section>

@@ -1,0 +1,344 @@
+<div class="row">
+  <div class="col-md-6">
+    <section class="panel panel-primary">
+      <div class="panel-heading"><strong>Informazioni Generali</strong></div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-lg-4 col-md-5">Codice Fiscale del valutatore</div>
+          <div class="col-lg-8 col-md-7 mb-3">
+            <input type="text" class="form-control" ng-model="formData.assestament.cdFiscalevalutatore"/>
+          </div>
+          <div class="clearfix mb-3"></div>
+          <div class="col-lg-4 col-md-5">Figura Professionale del valutatore</div>
+          <div class="col-lg-8 col-md-7 mb-3">
+            <input type="text" class="form-control" ng-model="formData.assestament.figProfesionalevalutatore"/>
+          </div>
+          <div class="clearfix mb-3"></div>
+          <div class="col-lg-4 col-md-5">Commento</div>
+          <div class="col-lg-8 col-md-7 mb-3">
+            <textarea class="form-control" rows="5" ng-model="formData.assestament.comento"></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="col-md-6">
+    <section class="panel panel-primary">
+      <div class="panel-heading"><strong>Peso e Altezza</strong></div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-lg-2 col-md-3">Peso</div>
+          <div class="col-lg-8 col-md-7 mb-3">
+            <input type="number" class="form-control sizeNumFisso" ng-model="formData.assestament.peso"/>
+          </div>
+          <div class="clearfix mb-3"></div>
+          <div class="col-lg-2 col-md-3">Altezza</div>
+          <div class="col-lg-8 col-md-7 mb-3">
+            <input type="number" class="form-control sizeNumFisso" ng-model="formData.assestament.altezza"/>
+          </div>
+          <div class="clearfix mb-3"></div>
+          <div class="col-lg-2 col-md-3">BMI</div>
+          <div class="col-lg-8 col-md-7 mb-3">
+            <input type="number" class="form-control sizeNumFisso" ng-model="formData.assestament.bmi"/>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<section class="panel panel-primary">
+  <div class="panel-heading"><strong>Screening</strong></div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-lg-2 col-md-3 mb-3">Presenta una perdita dell'appetito? Ha mangiato meno negli ultimi 3 mesi? (perdita d'appetito, problemi digestivi, difficoltà di masticazione o deglutizione)	</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_perditaappetito" class="radio" ng-model="formData.assestament.perditaappetito" value="0"/><span>Grave riduzione dell'assunzione di cibo
+          </span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_perditaappetito" class="radio" ng-model="formData.assestament.perditaappetito" value="1"/><span>Moderata riduzione dell'assunzione di cibo</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_perditaappetito" class="radio" ng-model="formData.assestament.perditaappetito" value="2"/><span>Nessuna riduzione dell'assunzione di cibo</span>
+        </label>
+      </div>
+      <div class="clearfix mb-3"></div>
+      <div class="col-lg-2 col-md-3 mb-3">Perdita di peso recente (&#60; 3 mesi)</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_perditapeso" class="radio" ng-model="formData.assestament.perditapeso" value="0"/><span>Perdita di peso &#62; 3 kg</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_perditapeso" class="radio" ng-model="formData.assestament.perditapeso" value="1"/><span>Non sa</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_perditapeso" class="radio" ng-model="formData.assestament.perditapeso" value="2"/><span>Perdita di peso  tra 1 e 3 kg</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_perditapeso" class="radio" ng-model="formData.assestament.perditapeso" value="3"/><span>Nessuna perdita di peso</span>
+        </label>
+      </div>
+      <div class="clearfix mb-3"></div>
+      <div class="col-lg-2 col-md-3 mb-3">Motricità</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_motrocita" class="radio" ng-model="formData.assestament.motricita" value="0"/><span>Dal letto alla poltrona</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_motrocita" class="radio" ng-model="formData.assestament.motricita" value="1"/><span>Autonomo a domicilio</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_motrocita" class="radio" ng-model="formData.assestament.motricita" value="2"/><span>Esce di casa</span>
+        </label>
+      </div>
+      <div class="clearfix mb-3"></div>
+      <div class="col-lg-2 col-md-3 mb-3">nell'arco degli ultimi 3 mesi: malattie acuteo stress psicologici</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_motrocita" class="radio" ng-model="formData.assestament.motricita" value="0"/><span>Si</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_motrocita" class="radio" ng-model="formData.assestament.motricita" value="2"/><span>No</span>
+        </label>
+      </div>
+      <div class="clearfix mb-3"></div>
+      <div class="col-lg-2 col-md-3 mb-3">Problemi neuropsicologici?</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_problemineuropsicologici" class="radio" ng-model="formData.assestament.problemineuropsicologici" value="0"/><span>Demenza o depresione grave</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_problemineuropsicologici" class="radio" ng-model="formData.assestament.problemineuropsicologici" value="1"/><span>Demenza moderada</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_problemineuropsicologici" class="radio" ng-model="formData.assestament.problemineuropsicologici" value="2"/><span>Nessun problema psicologico</span>
+        </label>
+      </div>
+      <div class="clearfix mb-3"></div>
+      <div class="col-lg-2 col-md-3 mb-3">Indice di massa corporea (IMC = peso/(altezza)<sup>2</sup> in kg/m<sup>2</sup>)</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_indicemassa" class="radio" ng-model="formData.assestament.indicemassa" value="0"/><span>IMC &#60; 19</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_indicemassa" class="radio" ng-model="formData.assestament.indicemassa" value="1"/><span>19 &#60;= IMC &#60; 21</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_indicemassa" class="radio" ng-model="formData.assestament.indicemassa" value="2"/><span>21 &#60;= IMC &#60; 19</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_indicemassa" class="radio" ng-model="formData.assestament.indicemassa" value="3"/><span>IMC &#62;= 23</span>
+        </label>
+      </div>
+      <div class="clearfix mb-3"></div>
+      <div class="col-lg-2 col-md-3 mb-3">Risultati Screening</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <input type="number" name="number_resultatiscreening" class="form-control sizeNumFisso" ng-model="formData.assestament.resultatiscrening"/>
+      </div>
+    </div>
+    <div class="clearfix mb-3"></div>
+    <pre class="col-lg-6">
+          <label class="">Leggenda</label>
+          <label class="">Da 12 a 14 punti - Stato nutrizionale normale (non è necessario continuare la valutazione)</label>
+          <label class="">Da 8 a 11 punti - A rischio di malnutrizione (è necessario continuare la valutazione)</label>
+          <label class="">Da 0 a 7 punti - Malnutrito (è necessario continuare la valutazione)</label>
+          </pre>
+  </div>
+</section>
+
+<section class="panel panel-primary">
+  <div class="panel-heading"><strong>Valutazione Globale</strong></div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-lg-2 col-md-3 mb-3">Il paziente vive autonomamente?</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_viveautonomamente" class="radio" ng-model="formData.assestament.viveautonomamente" value="1"/><span>Si</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_viveautonomamente" class="radio" ng-model="formData.assestament.viveautonomamente" value="0"/><span>No</span>
+        </label>
+      </div>
+      <div class="clearfix"></div>
+      <div class="clearfix"></div>
+      <div class="col-lg-2 col-md-3 mb-3">Prende più di 3 medicinali al giorno?</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_medicinalialgiorno" class="radio" ng-model="formData.assestament.medicinalialgiorno" value="1"/><span>Si</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_medicinalialgiorno" class="radio" ng-model="formData.assestament.medicinalialgiorno" value="0"/><span>No</span>
+        </label>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-lg-2 col-md-3 mb-3">Presenza di decubiti, ulcere cutanee?</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_presenzadidecubiti" class="radio" ng-model="formData.assestament.presenzadidecubiti" value="1"/><span>Si</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_presenzadidecubiti" class="radio" ng-model="formData.assestament.presenzadidecubiti" value="0"/><span>No</span>
+        </label>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-lg-2 col-md-3 mb-3">Quanti pasti completi prende al giorno?</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_pasticompleti" class="radio" ng-model="formData.assestament.pasticompleti" value="0"/><span>1 Pasto</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_pasticompleti" class="radio" ng-model="formData.assestament.pasticompleti" value="1"/><span>2 Pasti</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_pasticompleti" class="radio" ng-model="formData.assestament.pasticompleti" value="2"/><span>3 Pasti</span>
+        </label>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-lg-2 col-md-3 mb-3">Consuma almeno una volta al giorno dei prodotti caseari?</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_prodotticaseari" class="radio" ng-model="formData.assestament.prodotticaseari" value="0"/><span>Si</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_prodotticaseari" class="radio" ng-model="formData.assestament.prodotticaseari" value="1"/><span>No</span>
+        </label>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-lg-2 col-md-3 mb-3">Consuma una o due volte la settimana uova o legumi?</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_consumauovaolegumi" class="radio" ng-model="formData.assestament.consumauovaolegumi" value="SI"/><span>Si</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_consumauovaolegumi" class="radio" ng-model="formData.assestament.consumauovaolegumi" value="NO"/><span>No</span>
+        </label>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-lg-2 col-md-3 mb-3">Consuma ogni giorno della carne, del pesce o del pollame?</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_consumadellacarne" ng-model="formData.assestament.consumadellacarne" value="SI"/><span>Si</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_consumadellacarne" ng-model="formData.assestament.consumadellacarne" value="NO"/><span>No</span>
+        </label>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-lg-2 col-md-3 mb-3">Consuma almeno due volte al giorno frutta o verdura?</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_consumafruttaoverdura" ng-model="formData.assestament.consumafruttaoverdura" value="SI"/><span>0</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_consumafruttaoverdura" ng-model="formData.assestament.consumafruttaoverdura" value="NO"/><span>1</span>
+        </label>
+      </div>
+      <div class="clearfix"></div>
+      <div class="clearfix"></div>
+      <div class="col-lg-2 col-md-3 mb-3">Quanti bicchieri beve al giorno? (acqua, succhi, caffè, tè, latte ...)</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_quantebicchieribeve" class="radio" ng-model="formData.assestament.quantebicchieribeve" value="0"/><span>Meno di 3 bicchieri</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_quantebicchieribeve" class="radio" ng-model="formData.assestament.quantebicchieribeve" value="1"/><span>Da 3 a 5 bicchieri</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_quantebicchieribeve" class="radio" ng-model="formData.assestament.quantebicchieribeve" value="2"/><span>Più di 5 bicchieri</span>
+        </label>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="col-lg-2 col-md-3 mb-3">Come si nutre?</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_comesinutre" ng-model="formData.assestament.comesinutre" value="0"/><span>Necessita di assistenza</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_comesinutre" ng-model="formData.assestament.comesinutre" value="1"/><span>Autonomamente con difficoltà</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_comesinutre" ng-model="formData.assestament.comesinutre" value="2"/><span>Autonomamente senza difficoltà</span>
+        </label>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="col-lg-2 col-md-3 mb-3">Il paziente si considera ben nutrito? (ha dei problemi nutrizionali)</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_probleminutrizionali" ng-model="formData.assestament.probleminutrizionali" value="0"/><span>Malnutrizione grave</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_probleminutrizionali" ng-model="formData.assestament.probleminutrizionali" value="1"/><span>Malnutrizione moderata o non sa
+          </span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_probleminutrizionali" ng-model="formData.assestament.probleminutrizionali" value="2"/><span>Nessun problema nutrizionale</span>
+        </label>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="col-lg-2 col-md-3 mb-3">Il paziente considera il suo stato di salute migliore o peggiore di altre persone della sua età?</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_statodisalute" ng-model="formData.assestament.statodisalute" value="0"/><span>Meno buono</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_statodisalute" ng-model="formData.assestament.statodisalute" value="0.5"/><span>Non sa</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_statodisalute" ng-model="formData.assestament.statodisalute" value="1"/><span>Uguale</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_statodisalute" ng-model="formData.assestament.statodisalute" value="2"/><span>Miigliore</span>
+        </label>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-lg-2 col-md-3 mb-3">Circonferenza brachiale (CB, cm)</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_circonfBrachiale" class="radio" ng-model="formData.assestament.circonfBrachiale" value="0"/><span>CB &#60; 21</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_circonfBrachiale" class="radio" ng-model="formData.assestament.circonfBrachiale" value="0.5"/><span>21 &#60;= CB &#60;= 22</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_circonfBrachiale" class="radio" ng-model="formData.assestament.circonfBrachiale" value="1"/><span>CB &#62; 22</span>
+        </label>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-lg-2 col-md-3 mb-3">Circonferenza del polpaccio (CP, cm)</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <label class="ui-radio">
+          <input type="radio" name="radio_circonfPolpaccio" class="radio" ng-model="formData.assestament.circonfPolpaccio" value="0"/><span>CP &#60; 31</span>
+        </label>
+        <label class="ui-radio">
+          <input type="radio" name="radio_circonfPolpaccio" class="radio" ng-model="formData.assestament.circonfPolpaccio" value="1"/><span>CP &#62;= 31</span>
+        </label>
+      </div>
+      <div class="clearfix mb-3"></div>
+      <div class="col-lg-2 col-md-3 mb-3">Valutazione globale</div>
+      <div class="col-lg-8 col-md-7 mb-3">
+        <input type="number" name="number_valutazioneglobale" class="form-control sizeNumFisso" ng-model="formData.assestament.valutazioneglobale"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="panel panel-primary">
+  <div class="panel-body">
+    <div class="col-lg-2 col-md-3 mb-3">Risultato totale valutazione dello stato nutrizionale</div>
+    <div class="col-lg-8 col-md-7 mb-3">
+      <input type="number" name="number_resultatTotale" class="form-control sizeNumFisso" ng-model="formData.assestament.resultatTotale"/>
+    </div>
+    <div class="clearfix mb-3"></div>
+    <pre class="col-lg-6">
+          <label class="">Legenda Risultato totale</label>
+          <label class="">Da 24 a 30 punti - Stato nutrizionale normale</label>
+          <label class="">Da 15 a 23.5 punti - Rischio di malnutrizione</label>
+          <label class="">Meno di 17 punti - Cattivo stato nutrizionale</label>
+        </pre>
+  </div>
+</section>

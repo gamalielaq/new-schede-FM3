@@ -1,0 +1,286 @@
+ <section class="panel panel-default">
+ 	<div class="panel-body">
+ 		<div class="col-md-12">
+ 			<div class="list-group">
+ 				<div class="list-group-item">
+ 					<label>BASTONE</label>
+ 					<div class="form-inline">
+ 						<label class="ui-radio"><input type="radio" value="0" ng-model="formData.prueba" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><span>Si</span></label>
+ 						<label class="ui-radio"><input type="radio" value="1" ng-model="formData.prueba"><span>No</span></label>
+ 					</div>
+ 				</div>
+ 				<div class="list-group-item">
+ 					<label>GIRELLO</label>
+ 					<div class="form-inline">
+ 						<label class="ui-radio"><input type="radio"  value="0" name="" ng-model="" data-toggle="modal" data-target="#girello" data-whatever="@mdo"><span>Si</span></label>
+ 						<label class="ui-radio"><input type="radio"  value="1" name="" ng-model=""><span>No</span></label>
+ 					</div>
+ 				</div>
+ 				<div class="list-group-item">
+ 					<label>CARROZINA</label>
+ 					<div class="form-inline">
+ 						<label class="ui-radio"><input type="radio" value="0" name="" ng-model="" data-toggle="modal" data-target="#Carrozzina" data-whatever="@mdo"><span>Si</span></label>
+ 						<label class="ui-radio"><input type="radio" value="1" name="" ng-model=""><span>No</span></label>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ 	<div class="modal fade" id="exampleModal">
+ 		<div class="modal-dialog">
+ 			<div class="modal-content">
+ 				<div class="modal-header">
+ 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+ 					<h4 class="modal-title" id="exampleModalLabel">BASTONE</h4>
+ 				</div>
+ 				<div class="modal-body">
+ 					<div class="list-group">
+ 						<div class="list-group-item">
+ 							<label>Tipo</label>
+ 							<textarea class="form-control"></textarea>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>L'ospite è in grado di utilizzarlo in sicurezza?</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Si</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>No</span></label>
+ 							</div>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>Altezza adeguata</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Si</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>No</span></label>
+ 							</div>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>Adeguatezza gommino</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Si</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>No</span></label>
+ 							</div>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>Altro</label>
+ 							<textarea class="form-control"></textarea>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>Bastone idoneo?</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Si</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>No</span></label>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="modal-footer">
+ 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ 	<div class="modal fade" id="girello">
+ 		<div class="modal-dialog">
+ 			<div class="modal-content">
+ 				<div class="modal-header">
+ 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+ 					<h4 class="modal-title">GIRELLO</h4>
+ 				</div>
+ 				<div class="modal-body">
+ 					<div class="list-group">
+ 						<div class="list-group-item">
+ 							<label>Tipo</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>2 ruote + 2 ruote piroettanti</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>2 ruote + 2 ruote puntali</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>da esterno con cestino</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>antibranchiale</span></label>
+ 							</div>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>Necessità di utilizzo in esterni?</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Si</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>No</span></label>
+ 							</div>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>Altre esigenze (es cestino)</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Si</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>No</span></label>
+ 							</div>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>Girello idoneo ?	</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Si</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>No</span></label>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="modal-footer">
+ 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ 	<div class="modal fade" id="Carrozzina">
+ 		<div class="modal-dialog">
+ 			<div class="modal-content">
+ 				<div class="modal-header">
+ 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+ 					<h4 class="modal-title">CARROZINA</h4>
+ 				</div>
+ 				<div class="modal-body">
+ 					<div class="list-group">
+ 						<div class="list-group-item">
+ 							<label>Tipo</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Pieghevole</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Rigida</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Basculante</span></label>
+ 							</div>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>Dimensioni adeguate</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Si</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>No</span></label>
+ 							</div>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>Sono presenti problematiche legate al controllo del capo?</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Si</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>No</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Compensati dall'ausilio</span></label>
+ 							</div>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>Sono presenti problematiche legate al controllo del tronco?</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Si</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>No</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Compensati dall'ausilio</span></label>
+ 							</div>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>Sono presenti problematiche legate al controllo del bacino?</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Si</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>No</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Compensati dall'ausilio</span></label>
+ 							</div>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>Sono presenti problematiche agli arti inferiori?</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Si</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>No</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Compensati dall'ausilio</span></label>
+ 							</div>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>Sono presenti problematiche agli arti superiori?</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Si</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>No</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Compensati dall'ausilio</span></label>
+ 							</div>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>Tavolino</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Si</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>No</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Non necessario</span></label>
+ 							</div>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>Presidi antidecubito</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Si</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>No</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Non necessario</span></label>
+ 							</div>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>Autospinta</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Si</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>No</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Non necessario</span></label>
+ 							</div>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>Uso all'esterno</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Si</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>No</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Non necessario</span></label>
+ 							</div>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>Altro</label>
+ 							<textarea class="form-control"></textarea>
+ 						</div>
+ 						<div class="list-group-item">
+ 							<label>Carrozzina idonea ?	</label>
+ 							<div class="form-inline">
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>Si</span></label>
+ 								<label class="ui-radio"><input type="radio" name="" ng-model=""><span>No</span></label>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="modal-footer">
+ 					<button type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+
+ </section>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

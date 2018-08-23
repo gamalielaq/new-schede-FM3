@@ -1,0 +1,178 @@
+<section class="panel panel-default">
+	<div class="panel-body">
+		<div class="row">
+			
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								Informazioni Generali
+							</div>
+							<div class="panel-body">
+								<div class="form-horizontal">
+									<div class="col-sm-4 col-md-6">
+										<div class="form-group">
+											<label class="col-sm-12">Codice Fiscale del valutatore</label>
+											<div class="col-sm-12">
+												<input class="form-control" type="text" ng-model="formData.schedaMiniMentalShort.codiceFiscale">
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-md-6">
+										<div class="form-group">
+											<label class="col-sm-12">Figura Professionale del valutatore</label>
+											<div class="col-sm-12">
+												<input class="form-control" type="text" ng-model="formData.schedaMiniMentalShort.figuraProfessionale">
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4 col-md-12">
+										<div class="form-group">
+											<label class="col-sm-12">Commento</label>
+											<div class="col-sm-12">
+												<textarea class="form-control" ng-model="formData.schedaMiniMentalShort.comento"></textarea>
+											</div>
+										</div>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<div class="panel panel-primary">
+							<div class="panel-body">
+								<div class="col-md-12">
+									<div class="form-group">
+										<h2>Totale Punteggio: {{calcoloTotalePunteggio()}}</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						Short Portable Mental Status Questionnaire
+					</div>
+					<div class="list-group" ng-click="selectRadio();">
+						<div class="list-group-item">
+							<label class="col-md-9">Che giorno è oggi? (mese,giorno,anno)</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="1" name="radioUno" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaUno">
+								<span>Sì</span>
+							</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="0" name="radioUno" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaUno">
+								<span>No</span>
+							</label>
+						</div>
+						<div class="list-group-item">
+							<label class="col-md-9">Che giorno è della settimana?</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="1" name="radioDue" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaDue">
+								<span>Sì</span>
+							</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="0" name="radioDue" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaDue">
+								<span>No</span>
+							</label>
+						</div>	
+						<div class="list-group-item">
+							<label class="col-md-9">Come si chiama questo posto?</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="1" name="" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaTre">
+								<span>Sì</span>
+							</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="0" name="" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaTre">
+								<span>No</span>
+							</label>
+						</div>
+						<div class="list-group-item">
+							<label class="col-md-9">Quale è il vostro numero di telefono? (Se non ha il telefono: Quale è il vostro indirizzo?)</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="1" name="" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaQuatro">
+								<span>Sì</span>
+							</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="0" name="" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaQuatro">
+								<span>No</span>
+							</label>
+						</div>
+
+						<div class="list-group-item">
+							<label class="col-md-9">Quanti anni ha?</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="1" name="" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaCinque">
+								<span>Sì</span>
+							</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="0" name="" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaCinque">
+								<span>No</span>
+							</label>
+						</div>
+						<div class="list-group-item">
+							<label class="col-md-9">Chi è l'attuale...(es. Presidente della Repubblica o Papa?)</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="1" name="" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaSei">
+								<span>Sì</span>
+							</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="0" name="" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaSei">
+								<span>No</span>
+							</label>
+						</div>
+						<div class="list-group-item">
+							<label class="col-md-9">Chi era il precedente...(es. Presidente della Repubblica o Papa?)</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="1" name="" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaSette">
+								<span>Sì</span>
+							</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="0" name="" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaSette">
+								<span>No</span>
+							</label>
+						</div>
+						<div class="list-group-item">
+							<label class="col-md-9">Quale è il cognome da ragazza di sua madre?</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="1" name="" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaOtto">
+								<span>Sì</span>
+							</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="0" name="" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaOtto">
+								<span>No</span>s
+							</label>
+						</div>
+						<div class="list-group-item">
+							<label class="col-md-9">Faccia 20 meno tre ed ora di nuovo meno tre, fino a 2</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="1" name="" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaNove">
+								<span>Sì</span>
+							</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="0" name="" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaNove">
+								<span>No</span>
+							</label>
+						</div>
+						<div class="list-group-item">
+							<label class="col-md-9">Totale Punteggio SVAMA (senza considerare il livello di istruzione)</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="1" name="" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaDieci">
+								<span>Sì</span>
+							</label>
+							<label class="ui-radio">
+								<input type="radio" ng-value="0" name="" ng-model="formData.schedaMiniMentalShort.portableMentalStatus.rispostaDomandaDieci">
+								<span>No</span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+

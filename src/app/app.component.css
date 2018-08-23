@@ -1,0 +1,8 @@
+#content{
+	position: absolute !important;
+	right: 0px !important;
+	left: 0px !important;
+	overflow-y: scroll !important;
+	top: 0px !important;
+}
+

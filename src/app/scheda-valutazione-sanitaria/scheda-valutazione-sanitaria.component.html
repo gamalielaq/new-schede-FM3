@@ -1,0 +1,166 @@
+<!-- 
+<section class="panel panel-default">
+	<div class="panel-body">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						Informazioni Generali
+					</div>
+					<div class="panel-body">
+						<div class="form-horizontal">
+							<div class="col-sm-4 col-md-6">
+								<div class="form-group">
+									<label class="col-sm-12">Codice Fiscale del valutatore</label>
+									<div class="col-sm-12">
+										<input class="form-control" type="text" ng-model="formData.schedaValSanitaria.informazioneGenerali.codiceFiscale">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-6">
+								<div class="form-group">
+									<label class="col-sm-12">Figura professionale del valutatore</label>
+									<div class="col-sm-12">
+										<input class="form-control" type="text" ng-model="formData.schedaValSanitaria.informazioneGenerali.figuraProfessionale">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-12">
+								<div class="form-group">
+									<label class="col-sm-12">Commento</label>
+									<div class="col-sm-12">
+										<textarea class="form-control" ng-model="formData.schedaValSanitaria.informazioneGenerali.commento"></textarea>
+									</div>
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						Valutazione Sanitaria
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="form-horizontal">
+								<div class="col-sm-4 col-md-6">
+									<div class="form-group">
+										<label class="col-sm-12">Cenni anamnestici - problemi cronici in atto</label>
+										<div class="col-sm-12">
+											<input class="form-control" type="text" ng-model="formData.schedaValSanitaria.valSanitaria.cenniAnamnestici">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4 col-md-6">
+									<div class="form-group">
+										<label class="col-sm-12">Trattamenti in atto</label>
+										<div class="col-sm-12">
+											<input class="form-control" type="text" ng-model="formData.schedaValSanitaria.valSanitaria.trattamenti">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="list-group">
+									<div class="list-group-item">
+										<label>Diabete insulinodipendente</label>
+										<div class="form-inline">
+											<label class="ui-radio"><input type="radio" value="5" ng-model="formData.schedaValSanitaria.valSanitaria.optionUno"><span>Si</span></label>
+											<label class="ui-radio"><input type="radio" value="0" ng-model="formData.schedaValSanitaria.valSanitaria.optionUno"><span>No</span></label>
+										</div>
+									</div>
+									<div class="list-group-item">
+										<label>Scompenso cardiaco in classe 3 - 4 NYHA con necessità di monitoraggio frequente nel bilancio idrico alimentare e parametri vitali (polso,pressione,frequenza cardiaca)</label>
+										<div class="form-inline">
+											<label class="ui-radio"><input type="radio" value="10" ng-model="formData.schedaValSanitaria.valSanitaria.optionDue"><span>Si</span></label>
+											<label class="ui-radio"><input type="radio" value="0" ng-model="formData.schedaValSanitaria.valSanitaria.optionDue"><span>No</span></label>
+										</div>
+									</div>
+									<div class="list-group-item">
+										<label>Cirrosi scompensata (ascite) con necessità come sopra elencate</label>
+										<div class="form-inline">
+											<label class="ui-radio"><input type="radio" value="10" ng-model="formData.schedaValSanitaria.valSanitaria.optionTre"><span>Si</span></label>
+											<label class="ui-radio"><input type="radio" value="0" ng-model="formData.schedaValSanitaria.valSanitaria.optionTre"><span>No</span></label>
+										</div>
+									</div>
+									<div class="list-group-item">
+										<label>Tracheostomia</label>
+										<div class="form-inline">
+											<label class="ui-radio"><input type="radio" value="5" ng-model="formData.schedaValSanitaria.valSanitaria.optionQuatro"><span>Si</span></label>
+											<label class="ui-radio"><input type="radio" value="0" ng-model="formData.schedaValSanitaria.valSanitaria.optionQuatro"><span>No</span></label>
+										</div>
+									</div>
+									<div class="list-group-item">
+										<label>Ossigeno terapia continuativa a lungo termine (&#62 3h al dì)</label>
+										<div class="form-inline">
+											<label class="ui-radio"><input type="radio" value="5" ng-model="formData.schedaValSanitaria.valSanitaria.optionCinque"><span>Si</span></label>
+											<label class="ui-radio"><input type="radio" value="0" ng-model="formData.schedaValSanitaria.valSanitaria.optionCinque"><span>No</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="list-group">
+									<div class="list-group-item">
+										<label>Sondino naso gastrico, gastrostomia (PEG)</label>
+										<div class="form-inline">
+											<label class="ui-radio"><input type="radio" value="10" ng-model="formData.schedaValSanitaria.valSanitaria.optionSei"><span>Si</span></label>
+											<label class="ui-radio"><input type="radio" value="0" ng-model="formData.schedaValSanitaria.valSanitaria.optionSei"><span>No</span></label>
+										</div>
+									</div>
+									<div class="list-group-item">
+										<label>Catetere venoso centrale o nutrizione parentale totale</label>
+										<div class="form-inline">
+											<label class="ui-radio"><input type="radio" value="10" ng-model="formData.schedaValSanitaria.valSanitaria.optionSette"><span>Si</span></label>
+											<label class="ui-radio"><input type="radio" value="0" ng-model="formData.schedaValSanitaria.valSanitaria.optionSette"><span>No</span></label>
+										</div>
+									</div>
+									<div class="list-group-item">
+										<label>Catetere vescicale</label>
+										<div class="form-inline">
+											<label class="ui-radio"><input type="radio" value="5" ng-model="formData.schedaValSanitaria.valSanitaria.optionOtto"><span>Si</span></label>
+											<label class="ui-radio"><input type="radio" value="0" ng-model="formData.schedaValSanitaria.valSanitaria.optionOtto"><span>No</span></label>
+										</div>
+									</div>
+									<div class="list-group-item">
+										<label>Ano artificiale o ureterostomia</label>
+										<div class="form-inline">
+											<label class="ui-radio"><input type="radio" value="5" ng-model="formData.schedaValSanitaria.valSanitaria.optionNove"><span>Si</span></label>
+											<label class="ui-radio"><input type="radio" value="0" ng-model="formData.schedaValSanitaria.valSanitaria.optionNove"><span>No</span></label>
+										</div>
+									</div>
+									<div class="list-group-item">
+										<label>Nefrostomia o terapia peridurale a lungo termine</label>
+										<div class="form-inline">
+											<label class="ui-radio"><input type="radio" value="10" ng-model="formData.schedaValSanitaria.valSanitaria.optionDieci"><span>Si</span></label>
+											<label class="ui-radio"><input type="radio" value="0" ng-model="formData.schedaValSanitaria.valSanitaria.optionDieci"><span>No</span></label>
+										</div>
+									</div>
+									<div class="list-group-item">
+										<label>Ulcere distrofiche agli arti</label>
+										<div class="form-inline">
+											<label class="ui-radio"><input type="radio" value="5" ng-model="formData.schedaValSanitaria.valSanitaria.optionUndici"><span>Si</span></label>
+											<label class="ui-radio"><input type="radio" value="0" ng-model="formData.schedaValSanitaria.valSanitaria.optionUndici"><span>No</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel-footer">
+						<div class="row">
+							<label class="col-md-12">Totale</label>
+							<div class="col-md-12">
+								<input class="form-control" type="" name="" bg-model="formData.schedaValSanitaria.valSanitaria.totale">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
